@@ -11,7 +11,7 @@ class CategoryItem extends StatelessWidget {
       height: 80,
       child: Card(
         child: Padding(
-          padding:  const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(vertical: 16.0),
           child: ListTile(
             leading: ClipRRect(
               borderRadius: BorderRadius.circular(5.0),
