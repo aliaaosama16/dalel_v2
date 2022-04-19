@@ -29,19 +29,22 @@ class CategoriesScreen extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-            mainAxisExtent: 80, // here set custom Height You Want
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: GridView.builder(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 7,
+              mainAxisSpacing: 6,
+              mainAxisExtent: 80, // here set custom Height You Want
+            ),
+            itemCount: categoriesList.length,
+            itemBuilder: (BuildContext context, int index) {
+              return CategoryItem(
+                title: categoriesList[index],
+              );
+            },
           ),
-          itemCount: categoriesList.length,
-          itemBuilder: (BuildContext context, int index) {
-            return CategoryItem(
-              title: categoriesList[index],
-            );
-          },
         ),
       ),
     );
