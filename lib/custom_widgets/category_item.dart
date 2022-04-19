@@ -3,30 +3,34 @@ import 'package:flutter/material.dart';
 import '../utilities/constants.dart';
 
 class CategoryItem extends StatelessWidget {
-  const CategoryItem({Key? key}) : super(key: key);
+  const CategoryItem({Key? key, required this.title}) : super(key: key);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 80,
-      child: Card(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0),
-          child: ListTile(
-            leading: ClipRRect(
-              borderRadius: BorderRadius.circular(5.0),
-              child: SizedBox(
-                width: 50,
-                height: 50,
-                child: Image.asset(
-                  'assets/images/1024.png',
-                  fit: BoxFit.cover,
+      child: GestureDetector(
+        onTap: () => {print('category clicked to go to category list')},
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: ListTile(
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(5.0),
+                child: SizedBox(
+                  width: 50,
+                  height: 50,
+                  child: Image.asset(
+                    'assets/images/1024.png',
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            title: const Text(
-              'villas',
-              style: categoryTextStyle,
+              title: Text(
+                title,
+                style: categoryTextStyle,
+              ),
             ),
           ),
         ),

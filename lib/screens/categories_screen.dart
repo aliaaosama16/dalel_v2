@@ -4,8 +4,20 @@ import '../custom_widgets/category_item.dart';
 import '../utilities/constants.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({Key? key}) : super(key: key);
-
+  CategoriesScreen({Key? key}) : super(key: key);
+  final List categoriesList = [
+    'villas',
+    'chalets',
+    'villas',
+    'villas',
+    'chalets',
+    'villas',
+    'villas',
+    'chalets',
+    'villas',
+    'villas',
+    'chalets',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,22 +28,21 @@ class CategoriesScreen extends StatelessWidget {
           style: appBarTextStyle,
         ),
       ),
-      body: GridView.count(
-        primary: false,
-        padding: const EdgeInsets.all(16),
-        crossAxisSpacing: 8,
-        mainAxisSpacing: 8,
-        crossAxisCount: 2,
-        children:  <Widget>[
-          Container(child: CategoryItem(),height: 80,),
-          CategoryItem(),
-          CategoryItem(),
-          CategoryItem(),
-          CategoryItem(),
-          CategoryItem(),
-          CategoryItem(),
-          CategoryItem(),
-        ],
+      body: SafeArea(
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            mainAxisExtent: 80, // here set custom Height You Want
+          ),
+          itemCount: categoriesList.length,
+          itemBuilder: (BuildContext context, int index) {
+            return CategoryItem(
+              title: categoriesList[index],
+            );
+          },
+        ),
       ),
     );
   }
