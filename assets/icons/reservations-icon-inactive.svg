@@ -1,0 +1,13 @@
+<svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
+    <g id="article_black_24dp" transform="translate(-3 -3)">
+        <g data-name="Group 3850" id="Group_3850" transform="translate(3 3)">
+            <path
+                d="M15.444,4.556V15.444H4.556V4.556H15.444m0-1.556H4.556A1.56,1.56,0,0,0,3,4.556V15.444A1.56,1.56,0,0,0,4.556,17H15.444A1.56,1.56,0,0,0,17,15.444V4.556A1.56,1.56,0,0,0,15.444,3Z"
+                data-name="Path 13350" fill="rgba(255,170,118,0.54)" id="Path_13350"
+                transform="translate(-3 -3)" />
+        </g>
+        <path d="M12.444,14.778H7V13.222h5.444Zm2.333-3.111H7V10.111h7.778Zm0-3.111H7V7h7.778Z"
+            data-name="Path 13351" fill="rgba(255,170,118,0.54)" id="Path_13351"
+            transform="translate(-0.889 -0.889)" />
+    </g>
+</svg>

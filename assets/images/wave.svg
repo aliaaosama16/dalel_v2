@@ -1,0 +1,22 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="300" viewBox="0 0 1000 300" width="1000"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter filterUnits="userSpaceOnUse" height="178" id="Rectangle_1529" width="361" x="104"
+            y="288">
+            <feOffset dy="3" input="SourceAlpha" />
+            <feGaussianBlur result="blur" stdDeviation="3" />
+            <feFlood flood-opacity="0.161" />
+            <feComposite in2="blur" operator="in" />
+            <feComposite in="SourceGraphic" />
+        </filter>
+        <clipPath id="clip-wave_app">
+            <rect height="300" width="1000" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip-wave_app)" data-name="wave app" id="wave_app">
+        <path
+            d="M0,1181.183V101.54C0,45.46,95.719,0,213.8,0H2191.449c118.078,0,213.8,45.46,213.8,101.54V1301.92c-366.277-109.361-48.208-482.711-416.749-536.294-415.734-60.444-254.536,265.953-712.7,205.509s-627.849-48.355-814.512,108.8C360.844,1164.5,162.152,1182.543,0,1181.183Z"
+            data-name="Path 10668" fill="#ffeee3" id="Path_10668"
+            transform="matrix(0.995, 0.105, -0.105, 0.995, -427.433, -843.19)" />
+    </g>
+</svg>
